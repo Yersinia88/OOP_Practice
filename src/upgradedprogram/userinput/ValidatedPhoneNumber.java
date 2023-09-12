@@ -17,6 +17,7 @@ public class ValidatedPhoneNumber {
     private static final int MIN_DIGIT_WITH_TRUNK_CALL_PREFIX = 12;
     private int dialCode;
 
+//TODO: switch to regex
     public ValidatedPhoneNumber(String phoneNumber) {
         if(validationOfThePhoneNumber(phoneNumber)) {
             this.dialCode = getDialCode();
